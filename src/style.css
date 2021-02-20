@@ -1,1 +1,27 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: green;
+}
+
+/* aqui se define la carateristicas del card, tamaño y posición */
+.card {
+  margin: 0 auto;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* estilo para darle tamaño al numero */
+#sizeNumber {
+  margin: 0 auto;
+  font-size: 100px;
+}
+
+/* estilo para agrandar el tamaño del simbolo */
+.sizeSymbol {
+  font-size: 60px;
+}

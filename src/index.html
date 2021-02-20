@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,16 +14,23 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <!-- Se define una card de una fila y tres columnas con fondo blanco y esquinas redondeadas -->
+    <div class="card rounded" style="background: white;">
+      <!-- h-100 me permite que tome el tamaño maximo del card
+        flex-colum darle orientación horizontal -->
+      <div class="row d-flex flex-column h-100">
+        <div class="col">
+          <!-- aqui coloco el id para cambiar a traves del javascript el simbolo de la carta en la parte superior -->
+          <div id="symbol-top" class="sizeSymbol px-2"></div>
+        </div>
+        <div class="col">
+          <!-- dentro de esta columna centro el numero de la carta y le coloco un id  -->
+          <div id="sizeNumber" class="text-center">8</div>
+        </div>
+        <!-- aqui coloco el id para cambiar a traves del javascript el simbolo de la carta en la parte inferior y lo coloco al final del card en orientacion horizontal -->
+        <div class=" col d-flex justify-content-end">
+          <div id="symbol-botton" class="sizeSymbol px-2"></div>
+        </div>
       </div>
     </div>
   </body>
